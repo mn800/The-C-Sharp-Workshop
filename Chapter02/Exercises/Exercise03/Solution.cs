@@ -23,7 +23,7 @@ namespace Chapter02.Exercises.Exercise03
         public static bool IsEnough(double mosaicArea, IShape[] tiles)
         {
             double totalArea = 0;
-            foreach (var tile in tiles)
+            foreach (IShape tile in tiles)
             {
                 totalArea += tile.Area;
             }
